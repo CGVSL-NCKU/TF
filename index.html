@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Project: Template-based 3D Model Fitting Using Dual-domain Relaxation</title>
+</head>
+
+<style>
+.PaperTitle {
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.PaperSubTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+}
+.JounalTitle {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.TeaserText {
+	font-size: 16px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	border-top-width: 10px;
+	border-right-width: 25px;
+	border-bottom-width: 10px;
+	border-left-width: 25px;
+	color: #666666;
+}
+.TableText {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	margin: 25px;
+}
+.TableTitle {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #CCCCFF;
+	text-align: center;
+}
+.BibTex {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	color: #666666;
+	margin: 25px;
+}
+-->
+</style>
+<body bgcolor="#FFFFFF" link="blue" vlink="purple">
+  <table width="1016" border="0" align="center" cellpadding="0">
+    <tr>
+      <td colspan="2">
+        <p class="PaperTitle">&nbsp;</p>
+        <p class="PaperTitle">Template-based 3D Model Fitting <br />
+          Using
+Dual-domain Relaxation</p>
+        <p class="PaperSubTitle">          
+          <a href="http://vision.csie.ncku.edu.tw/~ichenyeh/">I-Cheng Yeh</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://www.geomatics.ncku.edu.tw/staff-1.php?view=linhung" target="_blank">Chao-Hung Lin</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://www.inf.ethz.ch/personal/sorkineo/" target="_blank">Olga Sorkine</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	      <a href="http://graphics.csie.ncku.edu.tw/Tony/tony.htm">Tong-Yee Lee</a><br /><br />
+      <strong><em>IEEE Transactions on Visualization and Computer Graphics</em></strong></p>      </td>      
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center" style='text-align:center'><img src="TbMF_teaser.jpg" width="1000" height="331" alt="Algorithm overview" /><span style='font-family:Arial'> </span></p>
+          <p class="TeaserText">System overview. (a) The input data with several user-specified feature correspondences (Male is the template mesh model and Armadillo is the target
+model); (b) coarse fitting step; (c) automatic iterative refinement adds geometric details to the coarse approximation (d) finally, executing mesh subdivision if
+necessary.</p></td>      </tr>
+      <tr>
+        <td width="110" class="TableTitle">Abstract</td>
+        <td width="900"><p class="TableText">We introduce a template fitting method for 3D surface meshes. A given template mesh is deformed to closely approximate the input 3D geometry. The connectivity of the deformed template model is automatically adjusted to facilitate the geometric fitting and to ascertain high quality of the mesh elements. The template fitting process utilizes a specially tailored Laplacian processing framework, where in the first, coarse fitting stage we approximate the input geometry with a linearized biharmonic surface (a variant of LS-mesh [39]), and then the fine geometric detail is fitted further using iterative Laplacian editing with reliable correspondence constraints and a local surface flattening mechanism to avoid foldovers. The latter step is performed in the dual mesh domain, which is shown to encourage near-equilateral mesh elements and significantly reduces the occurrence of triangle fold-overs, a well known problem in mesh fitting. To experimentally evaluate our approach, we compare our method with relevant state-of-the-art techniques and confirm significant improvements of results. In addition, we demonstrate the usefulness of our approach to the application of consistent surface parameterization (also known as cross-parameterization).</p></td>
+    </tr>
+      <tr>
+        <td width="110" class="TableTitle">Paper<br />
+        Download</td>
+        <td><p class="TableText">
+        <a href="2011_TVCG_Paper_finalVer.pdf"><img src="TbMF_PDF.jpg" alt="PDF, 19.8MB" width="720" height="284" border="0" /></a><br />
+        (Adobe PDF, Paper:13.5MB, Download from CS DIGITAL LIBRARY <a href="http://doi.ieeecomputersociety.org/10.1109/TVCG.2010.124">[Link]</a>)</p>
+        </td>
+      </tr>
+      <tr>
+        <td width="110" class="TableTitle">Materials<br />
+        Download</td>
+        <td><p class="TableText"><span class="TableText1">
+        <a href="./data/Data.of.Figures.rar">[Data of Figures]</a> (RAR, 72.6MB) | <a href="./data/Data.of.Tables.rar">[Data of Tables]</a> (RAR, 61.5MB)<br />
+        <a href="./Metro_v4_7.rar">[Get Metro v4.7]</a> <a href="http://vcg.isti.cnr.it/joomla/index.php?option=com_content&task=view&id=198&Itemid=50">[Web]</a> to measure Hausdorff distances.
+        </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="110" class="TableTitle">Presentation &amp; Results</td>
+        <td>
+          <div align="center">
+            <object width="425" height="344">
+              <param name="movie" value="http://www.youtube.com/v/5NsALHBlrdM?hl=zh&fs=1"></param>
+              <param name="allowFullScreen" value="true"></param>
+              <param name="allowscriptaccess" value="always"></param>
+              <embed src="http://www.youtube.com/v/5NsALHBlrdM?hl=zh&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+            </object>
+            &nbsp;
+            <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/qDHt_HcOU4A?hl=zh&fs=1"></param>
+              <param name="allowFullScreen" value="true"></param>
+              <param name="allowscriptaccess" value="always"></param>
+              <embed src="http://www.youtube.com/v/qDHt_HcOU4A?hl=zh&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+            </object>
+            <br />
+          <span class="TableText1">(Quick Time Format, 
+          <a href="2011_TVCG_Video_finalVer.mov">[Video : 52.8MB]</a></span> </div></td>
+      </tr>
+      <tr>
+        <td width="110" class="TableTitle">BibTeX</td>
+        <td><p class="BibTex"> @article{TbMF10,<br />
+&nbsp;&nbsp;&nbsp;author&nbsp;&nbsp;&nbsp; = {I-Cheng Yeh and Chao-Hung Lin and Olga Sorkine and Tong-Yee Lee},<br />
+&nbsp;&nbsp;&nbsp;title&nbsp;&nbsp;&nbsp;&nbsp; = {Template-based 3D Model Fitting Using Dual-domain Relaxation},<br />
+&nbsp;&nbsp;&nbsp;journal&nbsp;&nbsp; = {IEEE Transactions on Visualization and Computer Graphics},<br />
+&nbsp;&nbsp;&nbsp;volume&nbsp;&nbsp;&nbsp; = {99},<br />
+&nbsp;&nbsp;&nbsp;number&nbsp;&nbsp;&nbsp; = {RapidPosts},<br />
+&nbsp;&nbsp;&nbsp;issn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {1077-2626},<br />
+&nbsp;&nbsp;&nbsp;year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {2010},<br />
+&nbsp;&nbsp;&nbsp;doi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2010.124},<br />
+&nbsp;&nbsp;&nbsp;publisher = {IEEE Computer Society},<br />
+&nbsp;&nbsp;&nbsp;address&nbsp;&nbsp; = {Los Alamitos, CA, USA},<br />
+}
+</p>
+        </td>
+	  </tr>
+      <tr>
+        <td width="110" class="TableTitle">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr> 
+</table>
+</body>
+</html>
+<!--
+@inproceedings{Assa08,
+  author    = {Jackie Assaand and Daniel Cohen-Orand and
+               I-Cheng Yeh and Tong-Yee Lee},
+  title     = {Motion Overview of Human Action},
+  booktitle = {SIGGRAPH Asia 2008 Conference Proceedings},
+  month     = {Dec},
+  year      = {2008},
+  pages     = {???--???},
+  location  = {Suntec City, Singapore},
+  publisher = {ACM}
+}
+-->

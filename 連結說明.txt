@@ -1,0 +1,10 @@
+請將Public頁面修改成如下:
+“Template-based 3D Model Fitting Using Dual-domain Relaxation”
+to appear in IEEE Transactions on Visualization and Computer Graphics,2011
+[project web] [video]  [errata]  [A clean Tooth model]
+
+相對應的連結:
+project web : ./TF/
+video : ./TF/2011_TVCG_Video_finalVer.mov
+errata : ./TF/errata.pdf
+A clean Tooth model : ./TF/(target)tooth_modified(s1)_clean
